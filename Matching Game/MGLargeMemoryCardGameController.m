@@ -46,8 +46,9 @@
                                 completion:NULL];
             }
             
-            //playingCardView.faceUp = playingCard.isFaceUp;
-            memoryCardView.alpha = memoryCard.isUnplayable ? 0.3 : 1.0;
+            if (memoryCard.isUnplayable) {
+                memoryCardView.alpha = 0.5;
+            }
         }
     }
 }
