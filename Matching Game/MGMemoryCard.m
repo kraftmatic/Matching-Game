@@ -12,11 +12,71 @@
 @synthesize picture = _picture;
 
 + (NSArray *)validPictures{
-    return @[@"dog",
-             @"dog",
-             @"cat",
-             @"cat"
-             ];
+    int numberOfCards = [[NSUserDefaults standardUserDefaults] integerForKey:@"numberOfCards"];
+    if (numberOfCards == 4) {
+        return @[@"dog",
+                 @"dog",
+                 @"cat",
+                 @"cat",
+                 ];
+    } else if (numberOfCards == 16){
+        return @[@"dog",
+                 @"dog",
+                 @"cat",
+                 @"cat",
+                 @"chicken",
+                 @"chicken",
+                 @"cow",
+                 @"cow",
+                 @"pig",
+                 @"pig",
+                 @"llama",
+                 @"llama",
+                 @"rooster",
+                 @"rooster",
+                 @"sheep",
+                 @"sheep"
+                 ];
+    } else if (numberOfCards == 36){
+        return @[@"dog",
+                 @"dog",
+                 @"cat",
+                 @"cat",
+                 @"chicken",
+                 @"chicken",
+                 @"cow",
+                 @"cow",
+                 @"pig",
+                 @"pig",
+                 @"llama",
+                 @"llama",
+                 @"rooster",
+                 @"rooster",
+                 @"sheep",
+                 @"sheep",
+                 @"tractor",
+                 @"tractor",
+                 @"barn",
+                 @"barn",
+                 @"carrot",
+                 @"carrot",
+                 @"corn",
+                 @"corn",
+                 @"farmer",
+                 @"farmer",
+                 @"haybale",
+                 @"haybale",
+                 @"horse",
+                 @"horse",
+                 @"silo",
+                 @"silo",
+                 @"sunflower",
+                 @"sunflower",
+                 @"wheat",
+                 @"wheat"
+                 ];
+    }
+    return nil;
 }
 
 - (NSString *)picture

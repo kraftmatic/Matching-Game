@@ -29,9 +29,32 @@
 		C40E3A4B1A21A28B00466F73 /* MGCardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40E3A4A1A21A28B00466F73 /* MGCardGameController.m */; };
 		C40E3A4E1A21AB5B00466F73 /* MGMemoryCardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40E3A4D1A21AB5B00466F73 /* MGMemoryCardGameController.m */; };
 		C40E3A511A21BFE400466F73 /* MGMemoryCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C40E3A501A21BFE400466F73 /* MGMemoryCardCollectionViewCell.m */; };
-		C40E3A561A224A5D00466F73 /* card.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40E3A531A224A5D00466F73 /* card.jpg */; };
-		C40E3A571A224A5D00466F73 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40E3A541A224A5D00466F73 /* cat.jpg */; };
-		C40E3A581A224A5E00466F73 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40E3A551A224A5D00466F73 /* dog.jpg */; };
+		C4FE53811A2277BE00AC16E8 /* MGTitleScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE53801A2277BE00AC16E8 /* MGTitleScreenController.m */; };
+		C4FE53841A227DF700AC16E8 /* MGMediumCardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE53831A227DF700AC16E8 /* MGMediumCardGameController.m */; };
+		C4FE53951A22885B00AC16E8 /* MGMediumMemoryCardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE53941A22885B00AC16E8 /* MGMediumMemoryCardGameController.m */; };
+		C4FE539A1A228B1D00AC16E8 /* MGMediumMemoryCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE53991A228B1D00AC16E8 /* MGMediumMemoryCardCollectionViewCell.m */; };
+		C4FE53A11A229E7200AC16E8 /* MGLargeCardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE53A01A229E7200AC16E8 /* MGLargeCardGameController.m */; };
+		C4FE53A41A229F9400AC16E8 /* MGLargeMemoryCardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE53A31A229F9400AC16E8 /* MGLargeMemoryCardGameController.m */; };
+		C4FE53A71A22A11000AC16E8 /* MGLargeMemoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FE53A61A22A11000AC16E8 /* MGLargeMemoryCollectionViewCell.m */; };
+		C4FE53B51A22ABE100AC16E8 /* barn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53A81A22ABE100AC16E8 /* barn.jpg */; };
+		C4FE53B61A22ABE100AC16E8 /* carrot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53A91A22ABE100AC16E8 /* carrot.jpg */; };
+		C4FE53B71A22ABE100AC16E8 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53AA1A22ABE100AC16E8 /* cat.jpg */; };
+		C4FE53B81A22ABE100AC16E8 /* corn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53AB1A22ABE100AC16E8 /* corn.jpg */; };
+		C4FE53B91A22ABE100AC16E8 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53AC1A22ABE100AC16E8 /* dog.jpg */; };
+		C4FE53BB1A22ABE100AC16E8 /* haybale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53AE1A22ABE100AC16E8 /* haybale.jpg */; };
+		C4FE53BC1A22ABE100AC16E8 /* horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53AF1A22ABE100AC16E8 /* horse.jpg */; };
+		C4FE53BE1A22ABE100AC16E8 /* silo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53B11A22ABE100AC16E8 /* silo.jpg */; };
+		C4FE53BF1A22ABE100AC16E8 /* sunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53B21A22ABE100AC16E8 /* sunflower.jpg */; };
+		C4FE53C01A22ABE100AC16E8 /* tractor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53B31A22ABE100AC16E8 /* tractor.jpg */; };
+		C4FE53C11A22ABE100AC16E8 /* wheat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53B41A22ABE100AC16E8 /* wheat.jpg */; };
+		C4FE53C71A22ADA500AC16E8 /* chicken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53C21A22ADA500AC16E8 /* chicken.jpg */; };
+		C4FE53C81A22ADA500AC16E8 /* cow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53C31A22ADA500AC16E8 /* cow.jpg */; };
+		C4FE53C91A22ADA500AC16E8 /* pig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53C41A22ADA500AC16E8 /* pig.jpg */; };
+		C4FE53CA1A22ADA500AC16E8 /* rooster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53C51A22ADA500AC16E8 /* rooster.jpg */; };
+		C4FE53CB1A22ADA500AC16E8 /* sheep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53C61A22ADA500AC16E8 /* sheep.jpg */; };
+		C4FE53CD1A22ADBA00AC16E8 /* llama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53CC1A22ADBA00AC16E8 /* llama.jpg */; };
+		C4FE53CF1A22AE6E00AC16E8 /* card.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53CE1A22AE6E00AC16E8 /* card.jpg */; };
+		C4FE53D11A22B50C00AC16E8 /* farmer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53D01A22B50C00AC16E8 /* farmer.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +103,39 @@
 		C40E3A4D1A21AB5B00466F73 /* MGMemoryCardGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMemoryCardGameController.m; sourceTree = "<group>"; };
 		C40E3A4F1A21BFE400466F73 /* MGMemoryCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMemoryCardCollectionViewCell.h; sourceTree = "<group>"; };
 		C40E3A501A21BFE400466F73 /* MGMemoryCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMemoryCardCollectionViewCell.m; sourceTree = "<group>"; };
-		C40E3A531A224A5D00466F73 /* card.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card.jpg; sourceTree = "<group>"; };
-		C40E3A541A224A5D00466F73 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
-		C40E3A551A224A5D00466F73 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		C4FE537F1A2277BE00AC16E8 /* MGTitleScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTitleScreenController.h; sourceTree = "<group>"; };
+		C4FE53801A2277BE00AC16E8 /* MGTitleScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTitleScreenController.m; sourceTree = "<group>"; };
+		C4FE53821A227DF700AC16E8 /* MGMediumCardGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMediumCardGameController.h; sourceTree = "<group>"; };
+		C4FE53831A227DF700AC16E8 /* MGMediumCardGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMediumCardGameController.m; sourceTree = "<group>"; };
+		C4FE53931A22885B00AC16E8 /* MGMediumMemoryCardGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMediumMemoryCardGameController.h; sourceTree = "<group>"; };
+		C4FE53941A22885B00AC16E8 /* MGMediumMemoryCardGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMediumMemoryCardGameController.m; sourceTree = "<group>"; };
+		C4FE53981A228B1C00AC16E8 /* MGMediumMemoryCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMediumMemoryCardCollectionViewCell.h; sourceTree = "<group>"; };
+		C4FE53991A228B1D00AC16E8 /* MGMediumMemoryCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMediumMemoryCardCollectionViewCell.m; sourceTree = "<group>"; };
+		C4FE539F1A229E7200AC16E8 /* MGLargeCardGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLargeCardGameController.h; sourceTree = "<group>"; };
+		C4FE53A01A229E7200AC16E8 /* MGLargeCardGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLargeCardGameController.m; sourceTree = "<group>"; };
+		C4FE53A21A229F9400AC16E8 /* MGLargeMemoryCardGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLargeMemoryCardGameController.h; sourceTree = "<group>"; };
+		C4FE53A31A229F9400AC16E8 /* MGLargeMemoryCardGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLargeMemoryCardGameController.m; sourceTree = "<group>"; };
+		C4FE53A51A22A11000AC16E8 /* MGLargeMemoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLargeMemoryCollectionViewCell.h; sourceTree = "<group>"; };
+		C4FE53A61A22A11000AC16E8 /* MGLargeMemoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLargeMemoryCollectionViewCell.m; sourceTree = "<group>"; };
+		C4FE53A81A22ABE100AC16E8 /* barn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barn.jpg; sourceTree = "<group>"; };
+		C4FE53A91A22ABE100AC16E8 /* carrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carrot.jpg; sourceTree = "<group>"; };
+		C4FE53AA1A22ABE100AC16E8 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		C4FE53AB1A22ABE100AC16E8 /* corn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corn.jpg; sourceTree = "<group>"; };
+		C4FE53AC1A22ABE100AC16E8 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		C4FE53AE1A22ABE100AC16E8 /* haybale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haybale.jpg; sourceTree = "<group>"; };
+		C4FE53AF1A22ABE100AC16E8 /* horse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horse.jpg; sourceTree = "<group>"; };
+		C4FE53B11A22ABE100AC16E8 /* silo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silo.jpg; sourceTree = "<group>"; };
+		C4FE53B21A22ABE100AC16E8 /* sunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunflower.jpg; sourceTree = "<group>"; };
+		C4FE53B31A22ABE100AC16E8 /* tractor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tractor.jpg; sourceTree = "<group>"; };
+		C4FE53B41A22ABE100AC16E8 /* wheat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wheat.jpg; sourceTree = "<group>"; };
+		C4FE53C21A22ADA500AC16E8 /* chicken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chicken.jpg; sourceTree = "<group>"; };
+		C4FE53C31A22ADA500AC16E8 /* cow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cow.jpg; sourceTree = "<group>"; };
+		C4FE53C41A22ADA500AC16E8 /* pig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pig.jpg; sourceTree = "<group>"; };
+		C4FE53C51A22ADA500AC16E8 /* rooster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rooster.jpg; sourceTree = "<group>"; };
+		C4FE53C61A22ADA500AC16E8 /* sheep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sheep.jpg; sourceTree = "<group>"; };
+		C4FE53CC1A22ADBA00AC16E8 /* llama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = llama.jpg; sourceTree = "<group>"; };
+		C4FE53CE1A22AE6E00AC16E8 /* card.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card.jpg; sourceTree = "<group>"; };
+		C4FE53D01A22B50C00AC16E8 /* farmer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = farmer.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,14 +247,13 @@
 		C40E3A351A210BAE00466F73 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C4FE539B1A229BFB00AC16E8 /* Large Game */,
+				C4FE53971A22888300AC16E8 /* Medium Game */,
+				C4FE53961A22886000AC16E8 /* Small Game */,
 				C40E3A461A212B3B00466F73 /* MGCardView.h */,
 				C40E3A471A212B3B00466F73 /* MGCardView.m */,
-				C40E3A491A21A28B00466F73 /* MGCardGameController.h */,
-				C40E3A4A1A21A28B00466F73 /* MGCardGameController.m */,
-				C40E3A4C1A21AB5B00466F73 /* MGMemoryCardGameController.h */,
-				C40E3A4D1A21AB5B00466F73 /* MGMemoryCardGameController.m */,
-				C40E3A4F1A21BFE400466F73 /* MGMemoryCardCollectionViewCell.h */,
-				C40E3A501A21BFE400466F73 /* MGMemoryCardCollectionViewCell.m */,
+				C4FE537F1A2277BE00AC16E8 /* MGTitleScreenController.h */,
+				C4FE53801A2277BE00AC16E8 /* MGTitleScreenController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -226,11 +278,66 @@
 		C40E3A521A224A4200466F73 /* Card Images */ = {
 			isa = PBXGroup;
 			children = (
-				C40E3A531A224A5D00466F73 /* card.jpg */,
-				C40E3A541A224A5D00466F73 /* cat.jpg */,
-				C40E3A551A224A5D00466F73 /* dog.jpg */,
+				C4FE53D01A22B50C00AC16E8 /* farmer.jpg */,
+				C4FE53CE1A22AE6E00AC16E8 /* card.jpg */,
+				C4FE53CC1A22ADBA00AC16E8 /* llama.jpg */,
+				C4FE53C21A22ADA500AC16E8 /* chicken.jpg */,
+				C4FE53C31A22ADA500AC16E8 /* cow.jpg */,
+				C4FE53C41A22ADA500AC16E8 /* pig.jpg */,
+				C4FE53C51A22ADA500AC16E8 /* rooster.jpg */,
+				C4FE53C61A22ADA500AC16E8 /* sheep.jpg */,
+				C4FE53A81A22ABE100AC16E8 /* barn.jpg */,
+				C4FE53A91A22ABE100AC16E8 /* carrot.jpg */,
+				C4FE53AA1A22ABE100AC16E8 /* cat.jpg */,
+				C4FE53AB1A22ABE100AC16E8 /* corn.jpg */,
+				C4FE53AC1A22ABE100AC16E8 /* dog.jpg */,
+				C4FE53AE1A22ABE100AC16E8 /* haybale.jpg */,
+				C4FE53AF1A22ABE100AC16E8 /* horse.jpg */,
+				C4FE53B11A22ABE100AC16E8 /* silo.jpg */,
+				C4FE53B21A22ABE100AC16E8 /* sunflower.jpg */,
+				C4FE53B31A22ABE100AC16E8 /* tractor.jpg */,
+				C4FE53B41A22ABE100AC16E8 /* wheat.jpg */,
 			);
 			name = "Card Images";
+			sourceTree = "<group>";
+		};
+		C4FE53961A22886000AC16E8 /* Small Game */ = {
+			isa = PBXGroup;
+			children = (
+				C40E3A4F1A21BFE400466F73 /* MGMemoryCardCollectionViewCell.h */,
+				C40E3A501A21BFE400466F73 /* MGMemoryCardCollectionViewCell.m */,
+				C40E3A491A21A28B00466F73 /* MGCardGameController.h */,
+				C40E3A4A1A21A28B00466F73 /* MGCardGameController.m */,
+				C40E3A4C1A21AB5B00466F73 /* MGMemoryCardGameController.h */,
+				C40E3A4D1A21AB5B00466F73 /* MGMemoryCardGameController.m */,
+			);
+			name = "Small Game";
+			sourceTree = "<group>";
+		};
+		C4FE53971A22888300AC16E8 /* Medium Game */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE53821A227DF700AC16E8 /* MGMediumCardGameController.h */,
+				C4FE53831A227DF700AC16E8 /* MGMediumCardGameController.m */,
+				C4FE53931A22885B00AC16E8 /* MGMediumMemoryCardGameController.h */,
+				C4FE53941A22885B00AC16E8 /* MGMediumMemoryCardGameController.m */,
+				C4FE53981A228B1C00AC16E8 /* MGMediumMemoryCardCollectionViewCell.h */,
+				C4FE53991A228B1D00AC16E8 /* MGMediumMemoryCardCollectionViewCell.m */,
+			);
+			name = "Medium Game";
+			sourceTree = "<group>";
+		};
+		C4FE539B1A229BFB00AC16E8 /* Large Game */ = {
+			isa = PBXGroup;
+			children = (
+				C4FE539F1A229E7200AC16E8 /* MGLargeCardGameController.h */,
+				C4FE53A01A229E7200AC16E8 /* MGLargeCardGameController.m */,
+				C4FE53A21A229F9400AC16E8 /* MGLargeMemoryCardGameController.h */,
+				C4FE53A31A229F9400AC16E8 /* MGLargeMemoryCardGameController.m */,
+				C4FE53A51A22A11000AC16E8 /* MGLargeMemoryCollectionViewCell.h */,
+				C4FE53A61A22A11000AC16E8 /* MGLargeMemoryCollectionViewCell.m */,
+			);
+			name = "Large Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,12 +417,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40E3A581A224A5E00466F73 /* dog.jpg in Resources */,
-				C40E3A571A224A5D00466F73 /* cat.jpg in Resources */,
+				C4FE53B91A22ABE100AC16E8 /* dog.jpg in Resources */,
+				C4FE53CF1A22AE6E00AC16E8 /* card.jpg in Resources */,
+				C4FE53C11A22ABE100AC16E8 /* wheat.jpg in Resources */,
+				C4FE53B71A22ABE100AC16E8 /* cat.jpg in Resources */,
 				C40E3A181A210B9400466F73 /* Images.xcassets in Resources */,
-				C40E3A561A224A5D00466F73 /* card.jpg in Resources */,
 				C40E3A0A1A210B9400466F73 /* InfoPlist.strings in Resources */,
+				C4FE53B51A22ABE100AC16E8 /* barn.jpg in Resources */,
+				C4FE53D11A22B50C00AC16E8 /* farmer.jpg in Resources */,
+				C4FE53CD1A22ADBA00AC16E8 /* llama.jpg in Resources */,
+				C4FE53BC1A22ABE100AC16E8 /* horse.jpg in Resources */,
+				C4FE53C71A22ADA500AC16E8 /* chicken.jpg in Resources */,
+				C4FE53C01A22ABE100AC16E8 /* tractor.jpg in Resources */,
+				C4FE53BE1A22ABE100AC16E8 /* silo.jpg in Resources */,
+				C4FE53CA1A22ADA500AC16E8 /* rooster.jpg in Resources */,
+				C4FE53BF1A22ABE100AC16E8 /* sunflower.jpg in Resources */,
+				C4FE53B81A22ABE100AC16E8 /* corn.jpg in Resources */,
+				C4FE53B61A22ABE100AC16E8 /* carrot.jpg in Resources */,
+				C4FE53C81A22ADA500AC16E8 /* cow.jpg in Resources */,
+				C4FE53BB1A22ABE100AC16E8 /* haybale.jpg in Resources */,
 				C40E3A131A210B9400466F73 /* Main.storyboard in Resources */,
+				C4FE53CB1A22ADA500AC16E8 /* sheep.jpg in Resources */,
+				C4FE53C91A22ADA500AC16E8 /* pig.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,15 +458,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40E3A481A212B3B00466F73 /* MGCardView.m in Sources */,
+				C4FE53951A22885B00AC16E8 /* MGMediumMemoryCardGameController.m in Sources */,
 				C40E3A511A21BFE400466F73 /* MGMemoryCardCollectionViewCell.m in Sources */,
 				C40E3A451A21209F00466F73 /* MGMemoryGame.m in Sources */,
 				C40E3A4B1A21A28B00466F73 /* MGCardGameController.m in Sources */,
 				C40E3A3F1A2118BE00466F73 /* MGDeck.m in Sources */,
 				C40E3A3C1A21148000466F73 /* MGMemoryCard.m in Sources */,
 				C40E3A101A210B9400466F73 /* MGAppDelegate.m in Sources */,
+				C4FE53841A227DF700AC16E8 /* MGMediumCardGameController.m in Sources */,
+				C4FE53A71A22A11000AC16E8 /* MGLargeMemoryCollectionViewCell.m in Sources */,
 				C40E3A421A211AD300466F73 /* MGMemoryDeck.m in Sources */,
 				C40E3A391A210F6600466F73 /* MGCard.m in Sources */,
+				C4FE539A1A228B1D00AC16E8 /* MGMediumMemoryCardCollectionViewCell.m in Sources */,
 				C40E3A4E1A21AB5B00466F73 /* MGMemoryCardGameController.m in Sources */,
+				C4FE53A11A229E7200AC16E8 /* MGLargeCardGameController.m in Sources */,
+				C4FE53A41A229F9400AC16E8 /* MGLargeMemoryCardGameController.m in Sources */,
+				C4FE53811A2277BE00AC16E8 /* MGTitleScreenController.m in Sources */,
 				C40E3A0C1A210B9400466F73 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

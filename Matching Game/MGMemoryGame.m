@@ -11,7 +11,6 @@
 #import "MGDeck.h"
 
 @interface MGMemoryGame()
-@property (readwrite, nonatomic) int score;
 @property (strong, nonatomic) NSMutableArray *cards;
 @end
 
@@ -54,9 +53,6 @@
     return (index < [self.cards count]) ? self.cards[index] : nil;
 }
 
-#define MATCHBONUS 4
-#define MISMATCH_PENALTY 2
-#define FLIP_COST 1
 
 - (void)flipCardAtIndex:(NSUInteger)index
 {
@@ -64,25 +60,32 @@
     MGCard *card = [self cardAtIndex:index];
     if (card && !card.isUnplayable) {
         
+        int cardsUp = 0;
+        for (MGCard *otherCard in self.cards){
+            if (otherCard.isUp && !otherCard.isUnplayable) {
+                cardsUp++;
+            }
+        }
+        if (cardsUp == 2) {
+            for (MGCard *otherCard in self.cards) {
+                if (!otherCard.isUnplayable) {
+                    otherCard.isUp = NO;
+                }
+            }
+        }
+        
         if (!card.isUp) {
             for (MGCard *otherCard in self.cards) {
                 if (otherCard.isUp && !otherCard.isUnplayable) {
-                    int matchScore = [card match:@[otherCard]];
+                    int isMatched = [card match:@[otherCard]];
                     
-                    if (matchScore) {
+                    if (isMatched) {
                         card.isUnplayable = YES;
                         otherCard.isUnplayable = YES;
-                        self.score += matchScore * MATCHBONUS;
-                    } else {
-                        otherCard.isUp = NO;
-                        self.score -= MISMATCH_PENALTY;
                     }
-                    
                     break;
                 }
             }
-            
-            self.score -= FLIP_COST;
         }
         
         card.isUp = !card.isUp;
