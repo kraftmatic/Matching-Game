@@ -15,8 +15,13 @@
 
 @implementation MGTitleScreenController
 
+- (void)viewDidLoad {
+    self.gameBoardSelector.selectedSegmentIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"segmentedIndex"        ];
+}
+
 - (IBAction)dealButtonClicked:(id)sender {
     int segmentedControllerIndex = [self.gameBoardSelector selectedSegmentIndex];
+    [[NSUserDefaults standardUserDefaults] setInteger:segmentedControllerIndex forKey:@"segmentedIndex"];
     
     if (segmentedControllerIndex == 0) {
         [[NSUserDefaults standardUserDefaults] setInteger:4 forKey:@"numberOfCards"];

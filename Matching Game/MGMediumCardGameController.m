@@ -11,7 +11,6 @@
 
 @interface MGMediumCardGameController () <UICollectionViewDataSource>
 
-@property (nonatomic) int flipCount;
 @property (nonatomic, strong) MGMemoryGame *game;
 @property (weak, nonatomic) IBOutlet UICollectionView *mediumGameView;
 
@@ -67,7 +66,6 @@
     
     if (indexPath) {
         [self.game flipCardAtIndex:indexPath.item];
-        _flipCount++;
         [self updateUI];
     }
     

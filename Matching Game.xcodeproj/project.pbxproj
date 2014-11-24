@@ -55,6 +55,7 @@
 		C4FE53CD1A22ADBA00AC16E8 /* llama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53CC1A22ADBA00AC16E8 /* llama.jpg */; };
 		C4FE53CF1A22AE6E00AC16E8 /* card.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53CE1A22AE6E00AC16E8 /* card.jpg */; };
 		C4FE53D11A22B50C00AC16E8 /* farmer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53D01A22B50C00AC16E8 /* farmer.jpg */; };
+		C4FE53D31A22C2C400AC16E8 /* memoryMatchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C4FE53D21A22C2C400AC16E8 /* memoryMatchLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		C4FE53CC1A22ADBA00AC16E8 /* llama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = llama.jpg; sourceTree = "<group>"; };
 		C4FE53CE1A22AE6E00AC16E8 /* card.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = card.jpg; sourceTree = "<group>"; };
 		C4FE53D01A22B50C00AC16E8 /* farmer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = farmer.jpg; sourceTree = "<group>"; };
+		C4FE53D21A22C2C400AC16E8 /* memoryMatchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memoryMatchLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 		C40E3A521A224A4200466F73 /* Card Images */ = {
 			isa = PBXGroup;
 			children = (
+				C4FE53D21A22C2C400AC16E8 /* memoryMatchLogo.png */,
 				C4FE53D01A22B50C00AC16E8 /* farmer.jpg */,
 				C4FE53CE1A22AE6E00AC16E8 /* card.jpg */,
 				C4FE53CC1A22ADBA00AC16E8 /* llama.jpg */,
@@ -417,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FE53D31A22C2C400AC16E8 /* memoryMatchLogo.png in Resources */,
 				C4FE53B91A22ABE100AC16E8 /* dog.jpg in Resources */,
 				C4FE53CF1A22AE6E00AC16E8 /* card.jpg in Resources */,
 				C4FE53C11A22ABE100AC16E8 /* wheat.jpg in Resources */,
