@@ -45,17 +45,6 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
-    UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:12.0];
-    
-    [roundedRect addClip];
-    
-    [[UIColor whiteColor] setFill];
-    UIRectFill(self.bounds);
-    
-    [[UIColor blackColor] setStroke];
-    [roundedRect stroke];
-    
     if (self.faceUp) {
         
         UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", self.picture]];

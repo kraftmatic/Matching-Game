@@ -1,23 +1,22 @@
 //
-//  MGCardGameController.m
+//  MGLargeCardGameController.m
 //  Matching Game
 //
-//  Created by Nicholas Kraftor on 11/22/14.
+//  Created by Nicholas Kraftor on 11/23/14.
 //  Copyright (c) 2014 Enterprise Holdings Inc. All rights reserved.
 //
 
-#import "MGCardGameController.h"
+#import "MGLargeCardGameController.h"
 #import "MGMemoryGame.h"
 
-@interface MGCardGameController () <UICollectionViewDataSource>
+@interface MGLargeCardGameController () <UICollectionViewDataSource>
 
-@property (nonatomic) int flipCount;
 @property (nonatomic, strong) MGMemoryGame *game;
-@property (weak, nonatomic) IBOutlet UICollectionView *gameView;
+@property (weak, nonatomic) IBOutlet UICollectionView *largeGameView;
 
 @end
 
-@implementation MGCardGameController
+@implementation MGLargeCardGameController
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
@@ -27,7 +26,7 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MemoryCard" forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LargeMemoryCard" forIndexPath:indexPath];
     MGCard *card = [self.game cardAtIndex:indexPath.item];
     [self updateCell:cell usingCard:card animate:NO];
     return cell;
@@ -52,25 +51,23 @@
 
 - (void) updateUI
 {
-    for (UICollectionViewCell *cell in [self.gameView visibleCells]) {
-        NSIndexPath *indexPath = [self.gameView indexPathForCell:cell];
+    for (UICollectionViewCell *cell in [self.largeGameView visibleCells]) {
+        NSIndexPath *indexPath = [self.largeGameView indexPathForCell:cell];
         MGCard *card = [self.game cardAtIndex:indexPath.item];
         [self updateCell:cell usingCard:card animate:YES];
     }
-
+    
 }
 
 - (IBAction)flipCard:(UIGestureRecognizer *)gesture
 {
-    CGPoint tapLocation = [gesture locationInView:_gameView];
-    NSIndexPath *indexPath = [_gameView indexPathForItemAtPoint:tapLocation];
+    CGPoint tapLocation = [gesture locationInView:_largeGameView];
+    NSIndexPath *indexPath = [_largeGameView indexPathForItemAtPoint:tapLocation];
     
     if (indexPath) {
         [self.game flipCardAtIndex:indexPath.item];
-        _flipCount++;
         [self updateUI];
     }
-    
     
 }
 

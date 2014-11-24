@@ -1,19 +1,19 @@
 //
-//  MGMemoryCardGameController.m
+//  MGMediumMemoryCardGameController.m
 //  Matching Game
 //
-//  Created by Nicholas Kraftor on 11/22/14.
+//  Created by Nicholas Kraftor on 11/23/14.
 //  Copyright (c) 2014 Enterprise Holdings Inc. All rights reserved.
 //
 
-#import "MGMemoryCardGameController.h"
+#import "MGMediumMemoryCardGameController.h"
 #import "MGMemoryDeck.h"
-#import "MGMemoryCardCollectionViewCell.h"
+#import "MGMediumMemoryCardCollectionViewCell.h"
 #import "MGCardView.h"
 #import "MGMemoryCard.h"
 
 
-@implementation MGMemoryCardGameController
+@implementation MGMediumMemoryCardGameController
 
 - (MGDeck *)createDeck
 {
@@ -22,13 +22,13 @@
 
 - (NSUInteger) startingCardCount
 {
-    return 4;
+    return 16;
 }
 
 - (void) updateCell:(UICollectionViewCell *)cell usingCard:(MGCard *)card animate:(BOOL)animate
 {
-    if ([cell isKindOfClass:[MGMemoryCardCollectionViewCell class]]) {
-        MGCardView *memoryCardView = ((MGMemoryCardCollectionViewCell *)cell).cardView;
+    if ([cell isKindOfClass:[MGMediumMemoryCardCollectionViewCell class]]) {
+        MGCardView *memoryCardView = ((MGMediumMemoryCardCollectionViewCell *)cell).cardView;
         if ([card isKindOfClass:[MGMemoryCard class]]) {
             MGMemoryCard *memoryCard = (MGMemoryCard *)card;
             memoryCardView.picture = memoryCard.picture;
@@ -45,7 +45,7 @@
             }
             
             //playingCardView.faceUp = playingCard.isFaceUp;
-           memoryCardView.alpha = memoryCard.isUnplayable ? 0.3 : 1.0;
+            memoryCardView.alpha = memoryCard.isUnplayable ? 0.3 : 1.0;
         }
     }
 }

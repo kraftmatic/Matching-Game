@@ -1,9 +1,131 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hri-B7-jSV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
+        <!--Title Screen Controller-->
+        <scene sceneID="V6W-HE-e30">
+            <objects>
+                <viewController id="Dvf-7V-CLa" customClass="MGTitleScreenController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPE-yh-ryD"/>
+                        <viewControllerLayoutGuide type="bottom" id="lyl-pM-n6e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HnN-at-MLu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B4S-QM-Mtz">
+                                <rect key="frame" x="47" y="270" width="227" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="2x2"/>
+                                    <segment title="4x4"/>
+                                    <segment title="6x6"/>
+                                </segments>
+                            </segmentedControl>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="165-cs-Gd1">
+                                <rect key="frame" x="137" y="374" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Deal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dealButtonClicked:" destination="Dvf-7V-CLa" eventType="touchUpInside" id="8Ex-KM-Yvm"/>
+                                </connections>
+                            </button>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Game Board Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxK-IY-3pI">
+                                <rect key="frame" x="47" y="230" width="227" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8QU-Jm-obc"/>
+                    <connections>
+                        <outlet property="gameBoardSelector" destination="B4S-QM-Mtz" id="a9g-tt-1oq"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="2by2segue" id="miW-02-ULg"/>
+                        <segue destination="z5g-L2-hA4" kind="push" identifier="4by4segue" id="RQJ-e8-txV"/>
+                        <segue destination="AsX-1m-MUH" kind="push" identifier="6by6segue" id="PeB-q9-xPS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCE-uj-Nuw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="120"/>
+        </scene>
+        <!--Large Memory Card Game Controller-->
+        <scene sceneID="U9d-aY-iGe">
+            <objects>
+                <viewController id="AsX-1m-MUH" customClass="MGLargeMemoryCardGameController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wb4-rL-vxf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gtk-r9-l3V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lpg-Ui-g22">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nag-ql-Z2h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.33548298129999998" green="0.74388153700000004" blue="0.36499024740000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="mOB-yy-Wtu">
+                                    <size key="itemSize" width="50" height="77"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LargeMemoryCard" id="2JY-AU-Rfa" customClass="MGLargeMemoryCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="64" width="50" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8O-4X-PFY" customClass="MGCardView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="cardView" destination="Q8O-4X-PFY" id="z2g-7a-f1D"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="AsX-1m-MUH" id="7uq-EG-bc1"/>
+                                    <outletCollection property="gestureRecognizers" destination="qmZ-FJ-Mdv" appends="YES" id="sNh-Hn-bME"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qmZ-FJ-Mdv" appends="YES" id="KdX-L6-sTy"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="ta5-8w-oqe"/>
+                    <connections>
+                        <outlet property="largeGameView" destination="Nag-ql-Z2h" id="IpE-RN-55w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6G-nq-VtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qmZ-FJ-Mdv">
+                    <connections>
+                        <action selector="flipCard:" destination="AsX-1m-MUH" id="wNl-8l-Jik"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="707" y="120"/>
+        </scene>
         <!--Memory Card Game Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -22,21 +144,21 @@
                                 <color key="backgroundColor" red="0.33548298129999998" green="0.74388153700000004" blue="0.36499024740000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.33548298129999998" green="0.74388153700000004" blue="0.36499024740000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BdP-wr-0Lb">
-                                    <size key="itemSize" width="147" height="239"/>
+                                    <size key="itemSize" width="141" height="205"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemoryCard" id="Y80-Ui-SH0" customClass="MGMemoryCardCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="147" height="239"/>
+                                    <collectionViewCell appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="MemoryCard" id="Y80-Ui-SH0" customClass="MGMemoryCardCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="64" width="141" height="205"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="147" height="239"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iI9-Cp-WC1" customClass="MGCardView">
-                                                    <rect key="frame" x="14" y="27" width="119" height="186"/>
+                                                <view appearanceType="aqua" contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iI9-Cp-WC1" customClass="MGCardView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="205"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </view>
@@ -60,6 +182,7 @@
                             <outletCollection property="gestureRecognizers" destination="eOM-Db-7Te" appends="YES" id="nHt-1A-6rr"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="DMm-Ud-EFC"/>
                     <connections>
                         <outlet property="gameView" destination="Bac-TG-jiK" id="dYI-TA-gMa"/>
                     </connections>
@@ -71,6 +194,94 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="707" y="-634"/>
+        </scene>
+        <!--Medium Memory Card Game Controller-->
+        <scene sceneID="fTH-We-YON">
+            <objects>
+                <viewController id="z5g-L2-hA4" customClass="MGMediumMemoryCardGameController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z76-3a-bMT"/>
+                        <viewControllerLayoutGuide type="bottom" id="sPe-P0-aCJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FlY-cZ-43W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5yi-fe-Hap">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.33548298129999998" green="0.74388153700000004" blue="0.36499024740000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="yxo-D1-d5k">
+                                    <size key="itemSize" width="76" height="96"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediumMemoryCard" id="BM4-b0-nFG" customClass="MGMediumMemoryCardCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="64" width="76" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="76" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQ0-lo-47d" customClass="MGCardView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="76" height="96"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="cardView" destination="NQ0-lo-47d" id="qqP-Ho-5a5"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="z5g-L2-hA4" id="puB-6g-SNE"/>
+                                    <outletCollection property="gestureRecognizers" destination="rud-L3-lgi" appends="YES" id="cK8-lX-goV"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rud-L3-lgi" appends="YES" id="nk5-5y-GTq"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="zWR-KN-nK7"/>
+                    <connections>
+                        <outlet property="mediumGameView" destination="5yi-fe-Hap" id="Ov1-aZ-mCe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q4x-QD-Wqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rud-L3-lgi">
+                    <connections>
+                        <action selector="flipCard:" destination="z5g-L2-hA4" id="MGX-DA-yu4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="707" y="802"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8DB-5H-0cX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hri-B7-jSV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C0Y-I4-cwS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dvf-7V-CLa" kind="relationship" relationship="rootViewController" id="xtd-ml-a6h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDZ-aW-Qyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="120"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
